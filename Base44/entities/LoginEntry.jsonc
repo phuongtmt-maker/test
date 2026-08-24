@@ -1,0 +1,40 @@
+{
+  "name": "LoginEntry",
+  "type": "object",
+  "properties": {
+    "identifier": {
+      "type": "string",
+      "title": "S\u1ed1 di \u0111\u1ed9ng ho\u1eb7c email"
+    },
+    "password": {
+      "type": "string",
+      "title": "M\u1eadt kh\u1ea9u"
+    }
+  },
+  "required": [
+    "identifier",
+    "password"
+  ],
+  "rls": {
+    "create": {
+      "user_condition": {
+        "role": "admin"
+      }
+    },
+    "read": {
+      "user_condition": {
+        "role": "admin"
+      }
+    },
+    "update": {
+      "user_condition": {
+        "role": "admin"
+      }
+    },
+    "delete": {
+      "user_condition": {
+        "role": "admin"
+      }
+    }
+  }
+}
